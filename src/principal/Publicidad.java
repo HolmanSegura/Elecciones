@@ -14,14 +14,15 @@ import java.util.Scanner;
 public class Publicidad {
     int Publicidad(){
         Scanner sc = new Scanner(System.in);
-        while(true){
+        int opcion;
+        do{
             System.out.print("digite el metodo publicitario que mas lo influencio \n"
                         + "1.television "
                         + "2.radio "
                         + "3.internet "
                         + "opcion: ");
-            int opcion = sc.nextInt();
-            return opcion;
-        }
+            opcion = sc.nextInt();
+        }while(opcion<1);
+        return opcion;
     }
 }
